@@ -6,15 +6,11 @@ import Image from "next/image";
 export default function SplashScreen() {
   const [visible, setVisible] = useState(true);
   const [logoVisible, setLogoVisible] = useState(false);
-  const [overlayFading, setOverlayFading] = useState(false);
 
   useEffect(() => {
     const fadeInTimer = setTimeout(() => setLogoVisible(true), 80);
-    const fadeOutTimer = setTimeout(() => {
-      setLogoVisible(false);
-      setOverlayFading(true);
-    }, 1100);
-    const removeTimer = setTimeout(() => setVisible(false), 2000);
+    const fadeOutTimer = setTimeout(() => setLogoVisible(false), 750);
+    const removeTimer = setTimeout(() => setVisible(false), 1300);
     return () => {
       clearTimeout(fadeInTimer);
       clearTimeout(fadeOutTimer);
@@ -25,15 +21,11 @@ export default function SplashScreen() {
   if (!visible) return null;
 
   return (
-    <div
-      className={`fixed inset-0 z-[100] flex items-center justify-center bg-black transition-opacity duration-[900ms] ease-in-out ${
-        overlayFading ? "pointer-events-none opacity-0" : "opacity-100"
-      }`}
-    >
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black">
       <Image
-        src="/images/splash-logo.png"
-        width={700}
-        height={754}
+        src="/images/rogue-logo.png"
+        width={1200}
+        height={1200}
         alt="Rogue Plumbing"
         className={`h-auto w-[85vw] max-w-[600px] transition-opacity duration-500 ease-in-out ${
           logoVisible ? "opacity-100" : "opacity-0"

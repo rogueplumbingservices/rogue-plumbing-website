@@ -44,6 +44,20 @@ body {
   background-repeat: repeat;
 }
 
+.page-content-fade {
+  opacity: 0;
+  animation: pageFadeIn 0.5s ease-out 1.6s forwards;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;

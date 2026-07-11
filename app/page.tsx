@@ -14,7 +14,7 @@ export default function Home() {
 
       <SplashScreen />
 
-      <div className="page-content-fade">
+      
 
       <Nav />
 
@@ -80,8 +80,6 @@ export default function Home() {
       </Reveal>
 
       <Footer />
-
-      </div>
 
     </main>
   );
