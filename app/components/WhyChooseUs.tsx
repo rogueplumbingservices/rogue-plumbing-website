@@ -10,7 +10,7 @@ export default function WhyChooseUs() {
     <section className="bg-neutral-950 px-6 py-24">
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
-          <h2 className="text-5xl font-black text-yellow-400">
+          <h2 className="text-5xl font-black text-[#c9a227]">
             Why Choose Rogue Plumbing
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-400">
@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
         <div className="mt-16 grid grid-cols-2 gap-8 md:grid-cols-4">
           {points.map((p) => (
             <div key={p.label} className="text-center">
-              <div className="text-5xl font-black text-yellow-400">
+              <div className="text-5xl font-black text-[#c9a227]">
                 {p.stat}
               </div>
               <div className="mt-2 text-gray-300">{p.label}</div>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Phone } from "lucide-react";
 import Nav from "./components/Nav";
 import Services from "./components/Services";
@@ -7,27 +6,21 @@ import ServiceArea from "./components/ServiceArea";
 import EstimateForm from "./components/EstimateForm";
 import Footer from "./components/Footer";
 import Reveal from "./components/Reveal";
+import SplashScreen from "./components/SplashScreen";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
 
+      <SplashScreen />
+
       <Nav />
 
       {/* Hero */}
-      <section className="flex min-h-screen flex-col items-center justify-center px-6 pt-24 text-center">
+      <section className="flex flex-col items-center justify-center px-6 pb-20 pt-40 text-center">
 
         <div className="flex flex-col items-center animate-fade-in-up">
-          <Image
-            src="/images/rogue-logo.png"
-            width={480}
-            height={480}
-            alt="Rogue Plumbing Logo"
-            className="-mb-16 h-auto w-[480px]"
-            priority
-          />
-
-          <h1 className="text-6xl font-black text-yellow-400">
+          <h1 className="text-6xl font-black text-[#c9a227]">
             24/7 Emergency Plumbing
           </h1>
 
@@ -44,7 +37,7 @@ export default function Home() {
 
             <a
               href="tel:+13234465001"
-              className="flex items-center justify-center gap-2 rounded-xl bg-yellow-500 px-10 py-5 text-lg font-bold text-black transition hover:scale-105"
+              className="flex items-center justify-center gap-2 rounded-xl bg-[#b8901a] px-10 py-5 text-lg font-bold text-black transition hover:scale-105"
             >
               <Phone className="h-5 w-5" strokeWidth={2.25} fill="currentColor" />
               Call (323) 446-5001
@@ -52,7 +45,7 @@ export default function Home() {
 
             <a
               href="#estimate"
-              className="rounded-xl border-2 border-yellow-500 px-10 py-5 text-lg font-bold text-yellow-400 transition hover:bg-yellow-500 hover:text-black"
+              className="rounded-xl border-2 border-[#b8901a] px-10 py-5 text-lg font-bold text-[#c9a227] transition hover:bg-[#b8901a] hover:text-black"
             >
               Free Estimate
             </a>

@@ -38,7 +38,7 @@ export default function Services() {
     <section className="bg-black px-6 py-24">
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
-          <h2 className="text-5xl font-black text-yellow-400">
+          <h2 className="text-5xl font-black text-[#c9a227]">
             Our Services
           </h2>
           <p className="mt-4 text-lg text-gray-400">
@@ -52,10 +52,10 @@ export default function Services() {
             return (
               <div
                 key={s.title}
-                className="rounded-2xl border border-yellow-500/20 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-yellow-500/60"
+                className="rounded-2xl border border-[#b8901a]/20 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-[#b8901a]/60"
               >
-                <Icon className="h-9 w-9 text-yellow-400" strokeWidth={1.75} />
-                <h3 className="mt-4 text-xl font-bold text-yellow-400">
+                <Icon className="h-9 w-9 text-[#c9a227]" strokeWidth={1.75} />
+                <h3 className="mt-4 text-xl font-bold text-[#c9a227]">
                   {s.title}
                 </h3>
                 <p className="mt-2 text-gray-300">{s.desc}</p>

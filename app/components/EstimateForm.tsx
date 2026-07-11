@@ -9,7 +9,7 @@ export default function EstimateForm() {
     return (
       <section id="estimate" className="bg-neutral-950 px-6 py-24">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-5xl font-black text-yellow-400">
+          <h2 className="text-5xl font-black text-[#c9a227]">
             Thanks!
           </h2>
           <p className="mt-4 text-lg text-gray-300">
@@ -24,7 +24,7 @@ export default function EstimateForm() {
     <section id="estimate" className="bg-neutral-950 px-6 py-24">
       <div className="mx-auto max-w-2xl">
         <div className="text-center">
-          <h2 className="text-5xl font-black text-yellow-400">
+          <h2 className="text-5xl font-black text-[#c9a227]">
             Get a Free Estimate
           </h2>
           <p className="mt-4 text-lg text-gray-400">
@@ -42,7 +42,7 @@ export default function EstimateForm() {
               type="text"
               name="name"
               required
-              className="mt-2 w-full rounded-lg border border-yellow-500/30 bg-black px-4 py-3 text-white outline-none focus:border-yellow-500"
+              className="mt-2 w-full rounded-lg border border-[#b8901a]/30 bg-black px-4 py-3 text-white outline-none focus:border-[#b8901a]"
             />
             <ValidationError prefix="Name" field="name" errors={state.errors} className="mt-1 text-sm text-red-400" />
           </div>
@@ -56,7 +56,7 @@ export default function EstimateForm() {
               type="tel"
               name="phone"
               required
-              className="mt-2 w-full rounded-lg border border-yellow-500/30 bg-black px-4 py-3 text-white outline-none focus:border-yellow-500"
+              className="mt-2 w-full rounded-lg border border-[#b8901a]/30 bg-black px-4 py-3 text-white outline-none focus:border-[#b8901a]"
             />
             <ValidationError prefix="Phone" field="phone" errors={state.errors} className="mt-1 text-sm text-red-400" />
           </div>
@@ -70,7 +70,7 @@ export default function EstimateForm() {
               type="email"
               name="email"
               required
-              className="mt-2 w-full rounded-lg border border-yellow-500/30 bg-black px-4 py-3 text-white outline-none focus:border-yellow-500"
+              className="mt-2 w-full rounded-lg border border-[#b8901a]/30 bg-black px-4 py-3 text-white outline-none focus:border-[#b8901a]"
             />
             <ValidationError prefix="Email" field="email" errors={state.errors} className="mt-1 text-sm text-red-400" />
           </div>
@@ -84,7 +84,7 @@ export default function EstimateForm() {
               name="message"
               required
               rows={5}
-              className="mt-2 w-full rounded-lg border border-yellow-500/30 bg-black px-4 py-3 text-white outline-none focus:border-yellow-500"
+              className="mt-2 w-full rounded-lg border border-[#b8901a]/30 bg-black px-4 py-3 text-white outline-none focus:border-[#b8901a]"
             />
             <ValidationError prefix="Message" field="message" errors={state.errors} className="mt-1 text-sm text-red-400" />
           </div>
@@ -92,7 +92,7 @@ export default function EstimateForm() {
           <button
             type="submit"
             disabled={state.submitting}
-            className="w-full rounded-xl bg-yellow-500 px-10 py-4 text-lg font-bold text-black transition hover:scale-105 disabled:opacity-50"
+            className="w-full rounded-xl bg-[#b8901a] px-10 py-4 text-lg font-bold text-black transition hover:scale-105 disabled:opacity-50"
           >
             {state.submitting ? "Sending..." : "Request Estimate"}
           </button>

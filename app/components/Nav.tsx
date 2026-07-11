@@ -5,6 +5,7 @@ import Link from "next/link";
 
 const links = [
   { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
   { label: "Services", href: "#services" },
   { label: "Why Us", href: "#why-us" },
   { label: "Service Area", href: "#service-area" },
@@ -12,23 +13,23 @@ const links = [
 ];
 
 const sparkles = [
-  { top: "10%", left: "8%", delay: "0s", size: "4px" },
-  { top: "60%", left: "18%", delay: "0.4s", size: "3px" },
-  { top: "25%", left: "32%", delay: "0.9s", size: "5px" },
-  { top: "70%", left: "45%", delay: "0.2s", size: "3px" },
-  { top: "15%", left: "58%", delay: "1.3s", size: "4px" },
-  { top: "65%", left: "70%", delay: "0.7s", size: "3px" },
-  { top: "20%", left: "82%", delay: "1.6s", size: "5px" },
-  { top: "55%", left: "92%", delay: "1s", size: "3px" },
+  { top: "5%", left: "8%", delay: "0s", size: "10px" },
+  { top: "55%", left: "18%", delay: "0.4s", size: "8px" },
+  { top: "15%", left: "32%", delay: "0.9s", size: "12px" },
+  { top: "65%", left: "45%", delay: "0.2s", size: "9px" },
+  { top: "8%", left: "58%", delay: "1.3s", size: "11px" },
+  { top: "60%", left: "70%", delay: "0.7s", size: "8px" },
+  { top: "12%", left: "82%", delay: "1.6s", size: "12px" },
+  { top: "50%", left: "92%", delay: "1s", size: "9px" },
 ];
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full border-b border-yellow-500/20 bg-black/90 backdrop-blur z-50">
+    <nav className="fixed top-0 w-full border-b border-[#b8901a]/20 bg-black/90 backdrop-blur z-50">
       <div className="mx-auto flex max-w-7xl items-center justify-between p-5">
-        <Link href="/about" className="relative inline-block">
+        <Link href="/" className="relative inline-block">
           <h2
             style={{ fontFamily: "OldEnglishFive, serif" }}
             className="sparkle-text text-3xl"
@@ -56,14 +57,14 @@ export default function Nav() {
             <a
               key={link.href}
               href={link.href}
-              className="text-gray-300 hover:text-yellow-400"
+              className="text-gray-300 hover:text-[#c9a227]"
             >
               {link.label}
             </a>
           ))}
           <a
             href="tel:+13234465001"
-            className="rounded-lg bg-yellow-500 px-5 py-2 font-bold text-black hover:bg-yellow-400"
+            className="rounded-lg bg-[#b8901a] px-5 py-2 font-bold text-black hover:bg-[#c9a227]"
           >
             Call Now
           </a>
@@ -73,7 +74,7 @@ export default function Nav() {
         <div className="flex items-center gap-3 md:hidden">
           <a
             href="tel:+13234465001"
-            className="rounded-lg bg-yellow-500 px-4 py-2 text-sm font-bold text-black hover:bg-yellow-400"
+            className="rounded-lg bg-[#b8901a] px-4 py-2 text-sm font-bold text-black hover:bg-[#c9a227]"
           >
             Call
           </a>
@@ -81,20 +82,20 @@ export default function Nav() {
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
             aria-expanded={open}
-            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-yellow-500/30"
+            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-[#b8901a]/30"
           >
             <span
-              className={`h-0.5 w-6 bg-yellow-400 transition ${
+              className={`h-0.5 w-6 bg-[#c9a227] transition ${
                 open ? "translate-y-2 rotate-45" : ""
               }`}
             />
             <span
-              className={`h-0.5 w-6 bg-yellow-400 transition ${
+              className={`h-0.5 w-6 bg-[#c9a227] transition ${
                 open ? "opacity-0" : ""
               }`}
             />
             <span
-              className={`h-0.5 w-6 bg-yellow-400 transition ${
+              className={`h-0.5 w-6 bg-[#c9a227] transition ${
                 open ? "-translate-y-2 -rotate-45" : ""
               }`}
             />
@@ -104,14 +105,14 @@ export default function Nav() {
 
       {/* Mobile dropdown */}
       {open && (
-        <div className="border-t border-yellow-500/20 bg-black md:hidden">
+        <div className="border-t border-[#b8901a]/20 bg-black md:hidden">
           <div className="flex flex-col p-5">
             {links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="border-b border-yellow-500/10 py-4 text-gray-300 hover:text-yellow-400"
+                className="border-b border-[#b8901a]/10 py-4 text-gray-300 hover:text-[#c9a227]"
               >
                 {link.label}
               </a>

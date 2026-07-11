@@ -18,11 +18,11 @@ function InstagramIcon() {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-yellow-500/20 bg-black px-6 py-16">
+    <footer className="border-t border-[#b8901a]/20 bg-black px-6 py-16">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 md:grid-cols-3">
 
         <div>
-          <h3 className="text-2xl font-black text-yellow-400">
+          <h3 className="text-2xl font-black text-[#c9a227]">
             Rogue Plumbing
           </h3>
           <p className="mt-4 text-gray-400">
@@ -34,7 +34,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Rogue Plumbing on Facebook"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-yellow-500/30 text-yellow-400 transition hover:bg-yellow-500 hover:text-black"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-[#b8901a]/30 text-[#c9a227] transition hover:bg-[#b8901a] hover:text-black"
             >
               <FacebookIcon />
             </a>
@@ -43,7 +43,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Rogue Plumbing on Instagram"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-yellow-500/30 text-yellow-400 transition hover:bg-yellow-500 hover:text-black"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-[#b8901a]/30 text-[#c9a227] transition hover:bg-[#b8901a] hover:text-black"
             >
               <InstagramIcon />
             </a>
@@ -51,12 +51,12 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="text-lg font-bold text-yellow-400">
+          <h4 className="text-lg font-bold text-[#c9a227]">
             Contact
           </h4>
           <ul className="mt-4 space-y-2 text-gray-400">
             <li>
-              <a href="tel:+13234465001" className="hover:text-yellow-400">
+              <a href="tel:+13234465001" className="hover:text-[#c9a227]">
                 (323) 446-5001
               </a>
             </li>
@@ -65,17 +65,17 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="text-lg font-bold text-yellow-400">
+          <h4 className="text-lg font-bold text-[#c9a227]">
             Quick Links
           </h4>
           <ul className="mt-4 space-y-2 text-gray-400">
             <li>
-              <a href="#estimate" className="hover:text-yellow-400">
+              <a href="#estimate" className="hover:text-[#c9a227]">
                 Free Estimate
               </a>
             </li>
             <li>
-              <a href="tel:+13234465001" className="hover:text-yellow-400">
+              <a href="tel:+13234465001" className="hover:text-[#c9a227]">
                 Call Now
               </a>
             </li>
@@ -84,7 +84,7 @@ export default function Footer() {
 
       </div>
 
-      <div className="mx-auto mt-12 max-w-7xl border-t border-yellow-500/10 pt-8 text-center text-sm text-gray-500">
+      <div className="mx-auto mt-12 max-w-7xl border-t border-[#b8901a]/10 pt-8 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} Rogue Plumbing. All rights reserved.
       </div>
     </footer>

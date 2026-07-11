@@ -1,73 +1,94 @@
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
-import Link from "next/link";
-import { Phone, Home } from "lucide-react";
+import Image from "next/image";
+import { Phone } from "lucide-react";
+import Nav from "./components/Nav";
+import Services from "./components/Services";
+import WhyChooseUs from "./components/WhyChooseUs";
+import ServiceArea from "./components/ServiceArea";
+import EstimateForm from "./components/EstimateForm";
+import Footer from "./components/Footer";
+import Reveal from "./components/Reveal";
+import SplashScreen from "./components/SplashScreen";
 
-export default function About() {
+export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
+
+      <SplashScreen />
+
       <Nav />
 
-      <section className="px-6 pb-24 pt-40">
-        <div className="mx-auto max-w-3xl">
-          <Link
-            href="/"
-            className="mb-8 inline-flex items-center gap-2 text-sm font-bold text-yellow-400 hover:text-yellow-300"
-          >
-            <Home className="h-4 w-4" strokeWidth={2.25} />
-            Back to Home
-          </Link>
+      {/* Hero */}
+      <section className="flex min-h-screen flex-col items-center justify-center px-6 pt-24 text-center">
 
-          <h1 className="text-center text-5xl font-black text-yellow-400">
-            About Rogue Plumbing
+        <div className="flex flex-col items-center animate-fade-in-up">
+          <Image
+            src="/images/rogue-logo.png"
+            width={480}
+            height={480}
+            alt="Rogue Plumbing Logo"
+            className="mb-4 h-auto w-[480px]"
+            priority
+          />
+
+          <h1 className="text-6xl font-black text-[#c9a227]">
+            24/7 Emergency Plumbing
           </h1>
 
-          <div className="mt-12 space-y-6 text-lg leading-relaxed text-gray-300">
-            <p>
-              At Rogue Plumbing, we&apos;re committed to providing honest, dependable
-              plumbing services backed by over 11 years of hands-on industry
-              experience. We proudly serve homeowners and businesses with
-              high-quality workmanship, fair pricing, and reliable solutions
-              that are built to last.
-            </p>
+          <h2 className="mt-3 text-3xl font-light text-white">
+            Serving Los Angeles County
+          </h2>
 
-            <p>
-              Whether you&apos;re dealing with a leaking pipe, clogged drain, water
-              heater issue, sewer problem, fixture installation, or an
-              emergency plumbing repair, you can count on Rogue Plumbing to
-              get the job done right the first time. We take pride in clear
-              communication, punctual service, and treating every property
-              with the same care and respect we&apos;d give our own.
-            </p>
+          <p className="mt-8 max-w-2xl text-xl text-gray-300">
+            Fast response times, honest service, and dependable plumbing
+            solutions whenever you need them.
+          </p>
 
-            <p>
-              Our services include plumbing repairs, drain cleaning, leak
-              detection, water heater repair and replacement, toilet, faucet
-              and garbage disposal installation, repiping, valve replacement,
-              and plumbing code corrections.
-            </p>
+          <div className="mt-12 flex flex-col gap-5 sm:flex-row">
 
-            <p>
-              At Rogue Plumbing, our reputation is built on honesty, hard
-              work, and old-school craftsmanship. If you&apos;re looking for a
-              trusted local plumber who stands behind their work, give us a
-              call today. We look forward to earning your business.
-            </p>
-          </div>
-
-          <div className="mt-12 flex justify-center">
             <a
               href="tel:+13234465001"
-              className="flex items-center justify-center gap-2 rounded-xl bg-yellow-500 px-10 py-5 text-lg font-bold text-black transition hover:scale-105"
+              className="flex items-center justify-center gap-2 rounded-xl bg-[#b8901a] px-10 py-5 text-lg font-bold text-black transition hover:scale-105"
             >
               <Phone className="h-5 w-5" strokeWidth={2.25} fill="currentColor" />
               Call (323) 446-5001
             </a>
+
+            <a
+              href="#estimate"
+              className="rounded-xl border-2 border-[#b8901a] px-10 py-5 text-lg font-bold text-[#c9a227] transition hover:bg-[#b8901a] hover:text-black"
+            >
+              Free Estimate
+            </a>
+
           </div>
         </div>
+
       </section>
 
+      <div id="services">
+        <Reveal>
+          <Services />
+        </Reveal>
+      </div>
+
+      <div id="why-us">
+        <Reveal>
+          <WhyChooseUs />
+        </Reveal>
+      </div>
+
+      <div id="service-area">
+        <Reveal>
+          <ServiceArea />
+        </Reveal>
+      </div>
+
+      <Reveal>
+        <EstimateForm />
+      </Reveal>
+
       <Footer />
+
     </main>
   );
 }
