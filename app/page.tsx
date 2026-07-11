@@ -10,9 +10,11 @@ import SplashScreen from "./components/SplashScreen";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-[#0d0d0d] site-texture text-white">
 
       <SplashScreen />
+
+      <div className="page-content-fade">
 
       <Nav />
 
@@ -78,6 +80,8 @@ export default function Home() {
       </Reveal>
 
       <Footer />
+
+      </div>
 
     </main>
   );
