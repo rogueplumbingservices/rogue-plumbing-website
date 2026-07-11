@@ -52,7 +52,7 @@ export default function Nav() {
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-6 lg:flex">
           {links.map((link) => (
             <a
               key={link.href}
@@ -71,7 +71,7 @@ export default function Nav() {
         </div>
 
         {/* Mobile controls */}
-        <div className="flex items-center gap-3 md:hidden">
+        <div className="flex items-center gap-3 lg:hidden">
           <a
             href="tel:+13234465001"
             className="rounded-lg bg-[#b8901a] px-4 py-2 text-sm font-bold text-black hover:bg-[#c9a227]"
@@ -105,7 +105,7 @@ export default function Nav() {
 
       {/* Mobile dropdown */}
       {open && (
-        <div className="border-t border-[#b8901a]/20 bg-black md:hidden">
+        <div className="border-t border-[#b8901a]/20 bg-black lg:hidden">
           <div className="flex flex-col p-5">
             {links.map((link) => (
               <a
