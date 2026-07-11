@@ -5,7 +5,7 @@ import { Phone, Home } from "lucide-react";
 
 export default function About() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-[#0d0d0d] site-texture text-white">
       <Nav />
 
       <section className="px-6 pb-24 pt-40">

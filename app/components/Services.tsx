@@ -35,7 +35,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="bg-black px-6 py-24">
+    <section className="bg-[#0d0d0d] site-texture px-6 py-24">
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
           <h2 className="text-5xl font-black text-[#c9a227]">

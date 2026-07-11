@@ -27,7 +27,7 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full border-b border-[#b8901a]/20 bg-black/90 backdrop-blur z-50">
+    <nav className="fixed top-0 w-full border-b border-[#b8901a]/20 bg-[#0d0d0d]/90 backdrop-blur z-50">
       <div className="mx-auto flex max-w-7xl items-center justify-between p-5">
         <Link href="/" className="relative inline-block">
           <h2
@@ -105,7 +105,7 @@ export default function Nav() {
 
       {/* Mobile dropdown */}
       {open && (
-        <div className="border-t border-[#b8901a]/20 bg-black lg:hidden">
+        <div className="border-t border-[#b8901a]/20 bg-[#0d0d0d] site-texture lg:hidden">
           <div className="flex flex-col p-5">
             {links.map((link) => (
               <a

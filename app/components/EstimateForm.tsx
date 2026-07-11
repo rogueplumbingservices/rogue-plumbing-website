@@ -42,7 +42,7 @@ export default function EstimateForm() {
               type="text"
               name="name"
               required
-              className="mt-2 w-full rounded-lg border border-[#b8901a]/30 bg-black px-4 py-3 text-white outline-none focus:border-[#b8901a]"
+              className="mt-2 w-full rounded-lg border border-[#b8901a]/30 bg-[#0d0d0d] px-4 py-3 text-white outline-none focus:border-[#b8901a]"
             />
             <ValidationError prefix="Name" field="name" errors={state.errors} className="mt-1 text-sm text-red-400" />
           </div>
@@ -56,7 +56,7 @@ export default function EstimateForm() {
               type="tel"
               name="phone"
               required
-              className="mt-2 w-full rounded-lg border border-[#b8901a]/30 bg-black px-4 py-3 text-white outline-none focus:border-[#b8901a]"
+              className="mt-2 w-full rounded-lg border border-[#b8901a]/30 bg-[#0d0d0d] px-4 py-3 text-white outline-none focus:border-[#b8901a]"
             />
             <ValidationError prefix="Phone" field="phone" errors={state.errors} className="mt-1 text-sm text-red-400" />
           </div>
@@ -70,7 +70,7 @@ export default function EstimateForm() {
               type="email"
               name="email"
               required
-              className="mt-2 w-full rounded-lg border border-[#b8901a]/30 bg-black px-4 py-3 text-white outline-none focus:border-[#b8901a]"
+              className="mt-2 w-full rounded-lg border border-[#b8901a]/30 bg-[#0d0d0d] px-4 py-3 text-white outline-none focus:border-[#b8901a]"
             />
             <ValidationError prefix="Email" field="email" errors={state.errors} className="mt-1 text-sm text-red-400" />
           </div>
@@ -84,7 +84,7 @@ export default function EstimateForm() {
               name="message"
               required
               rows={5}
-              className="mt-2 w-full rounded-lg border border-[#b8901a]/30 bg-black px-4 py-3 text-white outline-none focus:border-[#b8901a]"
+              className="mt-2 w-full rounded-lg border border-[#b8901a]/30 bg-[#0d0d0d] px-4 py-3 text-white outline-none focus:border-[#b8901a]"
             />
             <ValidationError prefix="Message" field="message" errors={state.errors} className="mt-1 text-sm text-red-400" />
           </div>
