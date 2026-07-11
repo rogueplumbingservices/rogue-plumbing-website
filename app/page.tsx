@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Phone } from "lucide-react";
 import Nav from "./components/Nav";
 import Services from "./components/Services";
 import WhyChooseUs from "./components/WhyChooseUs";
@@ -6,11 +7,10 @@ import ServiceArea from "./components/ServiceArea";
 import EstimateForm from "./components/EstimateForm";
 import Footer from "./components/Footer";
 import Reveal from "./components/Reveal";
-import StickyCallBar from "./components/StickyCallBar";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white pb-16 md:pb-0">
+    <main className="min-h-screen bg-black text-white">
 
       <Nav />
 
@@ -23,7 +23,7 @@ export default function Home() {
             width={480}
             height={480}
             alt="Rogue Plumbing Logo"
-            className="mb-10 h-auto w-[480px]"
+            className="-mb-16 h-auto w-[480px]"
             priority
           />
 
@@ -44,9 +44,10 @@ export default function Home() {
 
             <a
               href="tel:+13234465001"
-              className="rounded-xl bg-yellow-500 px-10 py-5 text-lg font-bold text-black transition hover:scale-105"
+              className="flex items-center justify-center gap-2 rounded-xl bg-yellow-500 px-10 py-5 text-lg font-bold text-black transition hover:scale-105"
             >
-              📞 Call (323) 446-5001
+              <Phone className="h-5 w-5" strokeWidth={2.25} fill="currentColor" />
+              Call (323) 446-5001
             </a>
 
             <a
@@ -84,8 +85,6 @@ export default function Home() {
       </Reveal>
 
       <Footer />
-
-      <StickyCallBar />
 
     </main>
   );

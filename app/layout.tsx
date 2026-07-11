@@ -22,6 +22,9 @@ export const metadata: Metadata = {
       "Fast, honest, dependable plumbing service across Los Angeles County. Available 24/7 for emergencies.",
     images: ["/images/rogue-logo.png"],
   },
+  other: {
+    "format-detection": "telephone=no, address=no, email=no, date=no",
+  },
 };
 
 export default function RootLayout({

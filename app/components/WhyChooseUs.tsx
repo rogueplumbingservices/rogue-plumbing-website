@@ -1,6 +1,6 @@
 const points = [
   { stat: "24/7", label: "Emergency Availability" },
-  { stat: "15+", label: "Years of Experience" },
+  { stat: "11+", label: "Years of Experience" },
   { stat: "100%", label: "Satisfaction Guarantee" },
   { stat: "5★", label: "Average Customer Rating" },
 ];
@@ -13,8 +13,10 @@ export default function WhyChooseUs() {
           <h2 className="text-5xl font-black text-yellow-400">
             Why Choose Rogue Plumbing
           </h2>
-          <p className="mt-4 text-lg text-gray-400">
-            Licensed, insured, and trusted by homeowners across Los Angeles County.
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-400">
+            Old-school craftsmanship, honest pricing, and a plumber who
+            shows up on time and gets it right the first time. We are the
+            gold standard in Los Angeles County plumbing.
           </p>
         </div>
 
