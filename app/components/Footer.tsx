@@ -56,8 +56,8 @@ export default function Footer() {
           </h4>
           <ul className="mt-4 space-y-2 text-gray-400">
             <li>
-              <a href="tel:+13234465001" className="hover:text-[#c9a227]">
-                (323) 446-5001
+              <a href="tel:+13233665929" className="hover:text-[#c9a227]">
+                (323) 366-5929
               </a>
             </li>
             <li>Available 24/7 for emergencies</li>
@@ -75,7 +75,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="tel:+13234465001" className="hover:text-[#c9a227]">
+              <a href="tel:+13233665929" className="hover:text-[#c9a227]">
                 Call Now
               </a>
             </li>

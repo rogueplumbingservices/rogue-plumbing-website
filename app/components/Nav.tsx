@@ -63,7 +63,7 @@ export default function Nav() {
             </a>
           ))}
           <a
-            href="tel:+13234465001"
+            href="tel:+13233665929"
             className="rounded-lg bg-[#b8901a] px-5 py-2 font-bold text-black hover:bg-[#c9a227]"
           >
             Call Now
@@ -73,7 +73,7 @@ export default function Nav() {
         {/* Mobile controls */}
         <div className="flex items-center gap-3 lg:hidden">
           <a
-            href="tel:+13234465001"
+            href="tel:+13233665929"
             className="rounded-lg bg-[#b8901a] px-4 py-2 text-sm font-bold text-black hover:bg-[#c9a227]"
           >
             Call

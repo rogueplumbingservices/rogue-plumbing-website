@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Rogue Plumbing | 24/7 Emergency Plumbing in LA County",
   description:
-    "Fast, honest, dependable plumbing service across Los Angeles County. Leak detection, drain cleaning, water heaters, repiping, and 24/7 emergency response. Call (323) 446-5001.",
+    "Fast, honest, dependable plumbing service across Los Angeles County. Leak detection, drain cleaning, water heaters, repiping, and 24/7 emergency response. Call (323) 366-5929.",
   openGraph: {
     title: "Rogue Plumbing | 24/7 Emergency Plumbing in LA County",
     description:
