@@ -34,7 +34,7 @@ export default function ServiceArea() {
           Proudly serving Los Angeles County and surrounding communities.
         </p>
 
-        <div className="mx-auto mt-12 max-w-4xl columns-2 gap-x-16 text-left sm:columns-3 md:columns-4">
+        <div className="mx-auto mt-12 max-w-4xl translate-x-8 columns-2 gap-x-16 text-left sm:columns-3 md:columns-4">
           {visibleCities.map((c) => (
             <div key={c} className="mb-4 flex items-center gap-2 break-inside-avoid">
               <MapPin className="h-4 w-4 flex-shrink-0 text-[#c9a227]" strokeWidth={2} />
