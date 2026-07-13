@@ -1,7 +1,6 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import Link from "next/link";
-import { Phone, Home } from "lucide-react";
+import { Phone } from "lucide-react";
 
 export default function About() {
   return (
@@ -10,14 +9,6 @@ export default function About() {
 
       <section className="px-6 pb-24 pt-40">
         <div className="mx-auto max-w-3xl">
-          <Link
-            href="/"
-            className="mb-8 inline-flex items-center gap-2 text-sm font-bold text-[#c9a227] hover:text-[#d4b13f]"
-          >
-            <Home className="h-4 w-4" strokeWidth={2.25} />
-            Back to Home
-          </Link>
-
           <h1 className="text-center text-5xl font-black text-[#c9a227]">
             About Rogue Plumbing
           </h1>

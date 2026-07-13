@@ -6,21 +6,10 @@ import Link from "next/link";
 const links = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Services", href: "#services" },
-  { label: "Why Us", href: "#why-us" },
-  { label: "Service Area", href: "#service-area" },
-  { label: "Free Estimate", href: "#estimate" },
-];
-
-const sparkles = [
-  { top: "5%", left: "8%", delay: "0s", size: "10px" },
-  { top: "55%", left: "18%", delay: "0.4s", size: "8px" },
-  { top: "15%", left: "32%", delay: "0.9s", size: "12px" },
-  { top: "65%", left: "45%", delay: "0.2s", size: "9px" },
-  { top: "8%", left: "58%", delay: "1.3s", size: "11px" },
-  { top: "60%", left: "70%", delay: "0.7s", size: "8px" },
-  { top: "12%", left: "82%", delay: "1.6s", size: "12px" },
-  { top: "50%", left: "92%", delay: "1s", size: "9px" },
+  { label: "Services", href: "/#services" },
+  { label: "Why Us", href: "/#why-us" },
+  { label: "Service Area", href: "/#service-area" },
+  { label: "Free Estimate", href: "/#estimate" },
 ];
 
 export default function Nav() {
@@ -36,19 +25,6 @@ export default function Nav() {
           >
             Rogue Plumbing
           </h2>
-          {sparkles.map((s, i) => (
-            <span
-              key={i}
-              className="sparkle-point"
-              style={{
-                top: s.top,
-                left: s.left,
-                width: s.size,
-                height: s.size,
-                animationDelay: s.delay,
-              }}
-            />
-          ))}
         </Link>
 
         {/* Desktop links */}

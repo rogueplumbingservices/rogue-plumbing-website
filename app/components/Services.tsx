@@ -52,7 +52,7 @@ export default function Services() {
             return (
               <div
                 key={s.title}
-                className="rounded-2xl border border-[#b8901a]/20 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-[#b8901a]/60"
+                className="rounded-2xl border border-[#b8901a]/20 bg-white/5 p-8"
               >
                 <Icon className="h-9 w-9 text-[#c9a227]" strokeWidth={1.75} />
                 <h3 className="mt-4 text-xl font-bold text-[#c9a227]">

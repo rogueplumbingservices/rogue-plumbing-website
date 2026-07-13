@@ -4,11 +4,23 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 export default function SplashScreen() {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const [logoVisible, setLogoVisible] = useState(false);
   const [overlayFading, setOverlayFading] = useState(false);
+  const [checked, setChecked] = useState(false);
 
   useEffect(() => {
+    const alreadyPlayed = sessionStorage.getItem("splashPlayed");
+    if (alreadyPlayed) {
+      setVisible(false);
+      setChecked(true);
+      return;
+    }
+
+    sessionStorage.setItem("splashPlayed", "true");
+    setVisible(true);
+    setChecked(true);
+
     const fadeInTimer = setTimeout(() => setLogoVisible(true), 80);
     const fadeOutTimer = setTimeout(() => {
       setLogoVisible(false);
@@ -22,7 +34,7 @@ export default function SplashScreen() {
     };
   }, []);
 
-  if (!visible) return null;
+  if (!checked || !visible) return null;
 
   return (
     <div

@@ -19,7 +19,7 @@ function InstagramIcon() {
 export default function Footer() {
   return (
     <footer className="border-t border-[#b8901a]/20 bg-[#0d0d0d] site-texture px-6 py-16">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 md:grid-cols-3">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 text-center md:grid-cols-3">
 
         <div>
           <h3 className="text-2xl font-black text-[#c9a227]">
@@ -28,7 +28,7 @@ export default function Footer() {
           <p className="mt-4 text-gray-400">
             Fast, honest, dependable plumbing service across Los Angeles County.
           </p>
-          <div className="mt-6 flex gap-4">
+          <div className="mt-6 flex justify-center gap-4">
             <a
               href="https://www.facebook.com/profile.php?id=100068443025820"
               target="_blank"
@@ -70,7 +70,7 @@ export default function Footer() {
           </h4>
           <ul className="mt-4 space-y-2 text-gray-400">
             <li>
-              <a href="#estimate" className="hover:text-[#c9a227]">
+              <a href="/#estimate" className="hover:text-[#c9a227]">
                 Free Estimate
               </a>
             </li>
