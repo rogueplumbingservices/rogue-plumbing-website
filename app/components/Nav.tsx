@@ -9,7 +9,7 @@ const links = [
   { label: "Services", href: "/#services" },
   { label: "Why Us", href: "/#why-us" },
   { label: "Service Area", href: "/#service-area" },
-  { label: "Free Estimate", href: "/#estimate" },
+  { label: "Request Estimate", href: "/#estimate" },
 ];
 
 export default function Nav() {

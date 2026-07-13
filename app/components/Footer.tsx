@@ -71,7 +71,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-gray-400">
             <li>
               <a href="/#estimate" className="hover:text-[#c9a227]">
-                Free Estimate
+                Request Estimate
               </a>
             </li>
             <li>
