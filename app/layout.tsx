@@ -16,11 +16,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.rogueplumbingservices.com"),
   title: "Rogue Plumbing | 24/7 Emergency Plumber in Los Angeles County",
   description:
-    "Trusted local plumber serving Los Angeles County. Leak detection, drain cleaning, water heater repair, repiping, and 24/7 emergency plumbing service. Call (323) 366-5929.",
+    "Family owned and operated plumber serving Los Angeles County. Leak detection, drain cleaning, water heater repair, repiping, and 24/7 emergency plumbing service. Call (323) 366-5929.",
   openGraph: {
     title: "Rogue Plumbing | 24/7 Emergency Plumber in Los Angeles County",
     description:
-      "Trusted local plumber serving Los Angeles County. Available 24/7 for emergencies.",
+      "Family owned and operated, serving Los Angeles County. Available 24/7 for emergencies.",
     images: ["/images/rogue-logo.png"],
     url: "https://www.rogueplumbingservices.com",
     siteName: "Rogue Plumbing",

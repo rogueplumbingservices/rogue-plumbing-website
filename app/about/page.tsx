@@ -15,7 +15,8 @@ export default function About() {
 
           <div className="mt-12 space-y-6 text-lg leading-relaxed text-gray-300">
             <p>
-              At Rogue Plumbing, we&apos;re committed to providing honest, dependable
+              At Rogue Plumbing, we&apos;re a family owned and operated
+              business committed to providing honest, dependable
               plumbing services backed by over 11 years of hands-on industry
               experience. We proudly serve homeowners and businesses with
               high-quality workmanship, fair pricing, and reliable solutions

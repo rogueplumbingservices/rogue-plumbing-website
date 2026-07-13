@@ -14,9 +14,10 @@ export default function WhyChooseUs() {
             Why Choose Rogue Plumbing
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-400">
-            Old-school craftsmanship, honest pricing, and a plumber who
-            shows up on time and gets it right the first time. We are the
-            gold standard in Los Angeles County plumbing.
+            Family owned and operated, built on old-school craftsmanship,
+            honest pricing, and a plumber who shows up on time and gets it
+            right the first time. We are the gold standard in Los Angeles
+            County plumbing.
           </p>
         </div>
 
