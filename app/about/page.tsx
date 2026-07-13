@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { Phone } from "lucide-react";
@@ -9,6 +10,16 @@ export default function About() {
 
       <section className="px-6 pb-24 pt-40">
         <div className="mx-auto max-w-3xl">
+          <div className="flex justify-center">
+            <Image
+              src="/images/rogue-logo.png"
+              width={480}
+              height={517}
+              alt="Rogue Plumbing Logo"
+              className="mb-8 h-auto w-[280px]"
+            />
+          </div>
+
           <h1 className="text-center text-5xl font-black text-[#c9a227]">
             About Rogue Plumbing
           </h1>
