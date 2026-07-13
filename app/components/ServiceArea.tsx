@@ -34,15 +34,13 @@ export default function ServiceArea() {
           Proudly serving Los Angeles County and surrounding communities.
         </p>
 
-        <div className="mt-12 flex justify-center">
-          <div className="columns-2 gap-x-8 text-left sm:columns-3 md:columns-4">
-            {visibleCities.map((c) => (
-              <div key={c} className="mb-4 flex items-center gap-2 break-inside-avoid">
-                <MapPin className="h-4 w-4 flex-shrink-0 text-[#c9a227]" strokeWidth={2} />
-                <span className="text-gray-300">{c}</span>
-              </div>
-            ))}
-          </div>
+        <div className="mx-auto mt-12 max-w-4xl columns-2 gap-x-16 text-left sm:columns-3 md:columns-4">
+          {visibleCities.map((c) => (
+            <div key={c} className="mb-4 flex items-center gap-2 break-inside-avoid">
+              <MapPin className="h-4 w-4 flex-shrink-0 text-[#c9a227]" strokeWidth={2} />
+              <span className="text-gray-300">{c}</span>
+            </div>
+          ))}
         </div>
 
         <button
