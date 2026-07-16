@@ -59,7 +59,7 @@ export default function About() {
           </div>
 
           <div className="mt-12 flex justify-center">
-            
+            <a
               href="tel:+13233665929"
               className="flex items-center justify-center gap-2 rounded-xl bg-[#b8901a] px-10 py-5 text-lg font-bold text-black transition hover:scale-105"
             >

@@ -1,6 +1,6 @@
 const points = [
   { stat: "24/7", label: "Emergency Availability" },
-  { stat: "11+", label: "Years of Experience" },
+  { stat: "10+", label: "Years of Experience" },
   { stat: "100%", label: "Satisfaction Guarantee" },
   { stat: "5★", label: "Average Customer Rating" },
 ];
