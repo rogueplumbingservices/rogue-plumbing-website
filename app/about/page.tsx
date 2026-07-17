@@ -59,10 +59,7 @@ export default function About() {
           </div>
 
           <div className="mt-12 flex justify-center">
-            
-              href="tel:+13233665929"
-              className="flex items-center justify-center gap-2 rounded-xl bg-[#b8901a] px-10 py-5 text-lg font-bold text-black transition hover:scale-105"
-            >
+            <a href="tel:+13233665929" className="flex items-center justify-center gap-2 rounded-xl bg-[#b8901a] px-10 py-5 text-lg font-bold text-black transition hover:scale-105">
               <Phone className="h-5 w-5" strokeWidth={2.25} fill="currentColor" />
               Call (323) 366-5929
             </a>
